@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Homework</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>  <!--Связываем текстовую метку с элементом формы -->
+        <input type="name" id="name" name="name" required><br>  <!--Создается поле куда пользователи вводят данные и их тип-->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <br><button type="submit">Submit</button> 
+    </form>
+
+    <br><label for="grades">Grades:</label>
+    <select id="grades" name="grades" required>
+        <option value="">Select your grade:</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+
+</body>
+</html>
